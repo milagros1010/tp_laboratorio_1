@@ -1,0 +1,149 @@
+03:19:05 **** Incremental Build of configuration Release for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+In function 'employee_setNombre',
+    inlined from 'employee_newParametros' at ..\Employee.c:53:55:
+..\Employee.c:76:4: warning: 'strncpy' specified bound 128 equals destination size [-Wstringop-truncation]
+   76 |    strncpy(this->nombre,nombre,128);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\Employee.c: In function 'employee_setNombre':
+..\Employee.c:76:4: warning: 'strncpy' specified bound 128 equals destination size [-Wstringop-truncation]
+   76 |    strncpy(this->nombre,nombre,128);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\Employee.c: In function 'employee_contadoridMax':
+..\Employee.c:273:6: warning: 'idAuxiliar' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  273 |  int idAuxiliar;
+      |      ^~~~~~~~~~
+..\Employee.c:296:13: warning: 'idAuxMaximo' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  296 |   *idMaximo = idAuxMaximo;
+      |   ~~~~~~~~~~^~~~~~~~~~~~~
+..\Employee.c: In function 'employee_Alta':
+..\Employee.c:273:6: warning: 'idAuxiliar' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  273 |  int idAuxiliar;
+      |      ^~~~~~~~~~
+..\Employee.c:336:25: warning: 'idAuxMaximo' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  336 |           idAux = idAux + 1;
+      |                   ~~~~~~^~~
+..\Employee.c: In function 'employee_buscarPorId':
+..\Employee.c:407:6: warning: 'idAux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  407 |    if( idAux == id)
+      |      ^
+..\Employee.c: In function 'employee_modificar':
+..\Employee.c:407:6: warning: 'idAux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  407 |    if( idAux == id)
+      |      ^
+..\Employee.c:396:6: note: 'idAux' was declared here
+  396 |  int idAux;
+      |      ^~~~~
+..\Employee.c:273:6: warning: 'idAuxiliar' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  273 |  int idAuxiliar;
+      |      ^~~~~~~~~~
+..\Employee.c:485:31: warning: 'idAuxMaximo' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  485 |                 idAux = idAux + 1;
+      |                         ~~~~~~^~~
+..\Employee.c: In function 'employee_baja':
+..\Employee.c:407:6: warning: 'idAux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  407 |    if( idAux == id)
+      |      ^
+..\Employee.c:396:6: note: 'idAux' was declared here
+  396 |  int idAux;
+      |      ^~~~~
+..\Employee.c:273:6: warning: 'idAuxiliar' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  273 |  int idAuxiliar;
+      |      ^~~~~~~~~~
+..\Employee.c:594:34: warning: 'idAuxMaximo' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  594 |                    idAux = idAux + 1;
+      |                            ~~~~~~^~~
+gcc -O3 -Wall -c -fmessage-length=0 -o ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" "..\\.metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.c" 
+gcc -O3 -Wall -c -fmessage-length=0 -o utn.o "..\\utn.c" 
+..\utn.c: In function 'getInt':
+..\utn.c:62:59: warning: implicit declaration of function 'esNumerica' [-Wimplicit-function-declaration]
+   62 |      getString(bufferString,sizeof(bufferString)) == 0 && esNumerica(bufferString,sizeof(bufferString)))
+      |                                                           ^~~~~~~~~~
+gcc -O3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o tp3_windows.exe ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Controller.o Employee.o main.o parser.o utn.o 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o:Controller.c:(.text+0x22b): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o:Controller.c:(.text+0x23b): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o:Controller.c:(.text+0x2d8): undefined reference to `ll_sort'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o:Controller.c:(.text+0x303): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o:Controller.c:(.text+0x313): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o:Controller.c:(.text+0x387): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o:Controller.c:(.text+0x39b): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o:Controller.c:(.text+0x4a8): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o:Controller.c:(.text+0x4d3): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x3d6): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x3e6): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x3fc): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x54c): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x5f1): undefined reference to `ll_add'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x631): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x641): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x65f): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x6c8): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x6dd): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x7c9): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x828): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x845): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x868): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xab5): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xac5): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xadf): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xbc9): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xc28): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xc45): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xca4): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xd23): undefined reference to `ll_remove'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xd75): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xd85): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xd9f): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: main.o:main.c:(.text.startup+0x20): undefined reference to `ll_newLinkedList'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: parser.o:parser.c:(.text+0xb3): undefined reference to `ll_add'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: parser.o:parser.c:(.text+0x16c): undefined reference to `ll_add'
+collect2.exe: error: ld returned 1 exit status
+03:19:12 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc "-LC:\\c 1H\\TP 4 (TERMINADO - WIN)\\ttt333\\tp3_windows" -o tp3_windows.exe ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+03:19:23 **** Incremental Build of configuration Release for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -o tp3_windows.exe ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Controller.o Employee.o main.o parser.o utn.o 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o:Controller.c:(.text+0x22b): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o:Controller.c:(.text+0x23b): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o:Controller.c:(.text+0x2d8): undefined reference to `ll_sort'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o:Controller.c:(.text+0x303): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o:Controller.c:(.text+0x313): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o:Controller.c:(.text+0x387): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o:Controller.c:(.text+0x39b): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o:Controller.c:(.text+0x4a8): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o:Controller.c:(.text+0x4d3): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x3d6): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x3e6): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x3fc): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x54c): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x5f1): undefined reference to `ll_add'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x631): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x641): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x65f): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x6c8): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x6dd): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x7c9): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x828): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x845): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0x868): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xab5): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xac5): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xadf): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xbc9): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xc28): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xc45): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xca4): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xd23): undefined reference to `ll_remove'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xd75): undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xd85): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o:Employee.c:(.text+0xd9f): undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: main.o:main.c:(.text.startup+0x20): undefined reference to `ll_newLinkedList'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: parser.o:parser.c:(.text+0xb3): undefined reference to `ll_add'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: parser.o:parser.c:(.text+0x16c): undefined reference to `ll_add'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for tp3_windows

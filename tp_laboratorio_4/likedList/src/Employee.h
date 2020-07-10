@@ -1,0 +1,41 @@
+#ifndef EMPLOYEE_H_
+#define EMPLOYEE_H_
+#define TAM_NOMBRE 128
+#define TAM_G
+
+typedef struct
+{
+    int id;
+    char nombre[128];
+    int horasTrabajadas;
+    int sueldo;
+}Employee;
+
+Employee* employee_new(void);
+Employee* employee_newParametros(char* idStr,char* nombreStr,char* horasTrabajadasStr, char* sueldoStr);
+int employee_delete(Employee* this);
+
+int employee_setId(Employee* this,char* id);
+int employee_getId(Employee* this,int* id);
+int employee_getIdTxt(Employee* this,char* id);
+
+int employee_setNombre(Employee* this,char* nombre);
+int employee_getNombre(Employee* this,char* nombre);
+
+int employee_setHorasTrabajadas(Employee* this,char* horasTrabajadas);
+int employee_getHorasTrabajadas(Employee* this,int* horasTrabajadas);
+int employee_getHorasTrabajadasTxt(Employee* this,char* horasTrabajadas);
+
+int employee_setSueldo(Employee* this,char* sueldo);
+int employee_getSueldo(Employee* this,int* sueldo);
+int employee_getSueldoTxt(Employee* this,char* sueldo);
+int employee_Alta(LinkedList* pArrayListEmployee);
+int generadorId(LinkedList* pArrayListEmployee);
+int employee_modificar(LinkedList* pArrayListEmployee);
+int employee_mostrar(Employee* pEmp);
+int employee_baja(LinkedList* pArrayListEmployee);
+int employee_sortByName(void* thisA,void* thisB);
+int employee_buscarPorId(LinkedList* pArrayListEmployee, int id);
+int employee_contadoridMax(LinkedList* pArrayListEmployee, int* idMaximo);
+
+#endif /* EMPLOYEE_H_ */

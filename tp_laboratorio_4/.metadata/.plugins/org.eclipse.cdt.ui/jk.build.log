@@ -1,0 +1,55 @@
+02:39:13 **** Incremental Build of configuration Debug for project jk ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+..\src\utn.c: In function 'getString':
+..\src\utn.c:41:3: warning: implicit declaration of function '__fpurge' [-Wimplicit-function-declaration]
+   41 |   __fpurge(stdin);
+      |   ^~~~~~~~
+..\src\utn.c: In function 'getInt':
+..\src\utn.c:70:59: warning: implicit declaration of function 'esNumerica' [-Wimplicit-function-declaration]
+   70 |      getString(bufferString,sizeof(bufferString)) == 0 && esNumerica(bufferString,sizeof(bufferString)))
+      |                                                           ^~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Employee.o" "..\\src\\Employee.c" 
+gcc -o jk.exe "src\\Controller.o" "src\\Employee.o" "src\\main.o" "src\\parser.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Controller.o: in function `controller_ListEmployee':
+C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Controller.c:180: undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Controller.c:178: undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Controller.o: in function `controller_sortEmployee':
+C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Controller.c:206: undefined reference to `ll_sort'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Controller.o: in function `controller_saveAsText':
+C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Controller.c:245: undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Controller.c:243: undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Controller.o: in function `controller_saveAsBinary':
+C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Controller.c:287: undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Controller.c:285: undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Employee.o: in function `employee_contadoridMax':
+C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Employee.c:280: undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Employee.c:284: undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Employee.c:278: undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Employee.o: in function `employee_Alta':
+C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Employee.c:327: undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Employee.c:342: undefined reference to `ll_add'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Employee.o: in function `employee_buscarPorId':
+C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Employee.c:402: undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Employee.c:400: undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Employee.o: in function `employee_modificar':
+C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Employee.c:476: undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Employee.c:491: undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Employee.o: in function `employee_baja':
+C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Employee.c:585: undefined reference to `ll_len'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Employee.c:611: undefined reference to `ll_get'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/Employee.c:619: undefined reference to `ll_remove'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\main.o: in function `main':
+C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/main.c:39: undefined reference to `ll_newLinkedList'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\parser.o: in function `parser_EmployeeFromText':
+C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/parser.c:42: undefined reference to `ll_add'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\parser.o: in function `parser_EmployeeFromBinary':
+C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/parser.c:74: undefined reference to `ll_add'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\utn.o: in function `getString':
+C:\c 1H\TP 4 (TERMINADO - WIN)\jk\Debug/../src/utn.c:41: undefined reference to `__fpurge'
+collect2.exe: error: ld returned 1 exit status
+
+02:39:18 Build Failed. 36 errors, 2 warnings. (took 5s.614ms)
+
